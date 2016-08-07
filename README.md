@@ -1,23 +1,23 @@
 ## surface.GetURL()
 
-#### About:
+### About:
 This is a simple Garry's Mod helper function to hot-load images from a web URL for use in your rendering operations.
 
-#### Installation:
+### Installation:
 Place the file cl_surfaceGetURL.lua into your *garrysmod/lua/autorun/client/* folder.
 
 You could also put it into a gamemode module if the code supports it. For example: *gamemodes/DarkRP/gamemode/modules/cl_surfaceGetURL/cl_surfaceGetURL.lua*
 
-#### Arguments:
+### Arguments:
 - **string** The URL of the image/page to download.
 - **number** The height of the image/page in pixels.
 - **number** The width of the image/page in pixels.
 - **number** The number of seconds of downloading before timing out (Default: 1).
 
-#### Returns:
+### Returns:
 - **IMaterial** The material after downloading **or** *Material("error")*
 
-#### Example:
+### Example:
 ```lua
 local DPanel = vgui.Create( "DPanel" )
 DPanel:SetSize( 336, 280 )
@@ -33,7 +33,7 @@ end
 
 ![Result](https://cloud.githubusercontent.com/assets/2367602/17459932/b99e6e76-5c92-11e6-8196-23d8ae567b1f.png)
 
-#### Usage:
+### Usage:
 To use this helper function you will need to either call surface.GetURL from inside a render hook/function like such: 
 ```lua
 local WebMaterial = surface.GetURL("http://www.lipsum.com/images/banners/black_336x280.gif", 336, 280) // This will give you an error because it has not had time to download the image.
@@ -68,6 +68,6 @@ end
 
 *For more information on how to use downloaded materials, please read ![gmod](http://wiki.garrysmod.com/favicon.ico) [this article](http://wiki.garrysmod.com/page/Category:IMaterial).*
 
-#### Support:
+### Support:
 Please direct all your questions to the GitHub issue tracker:
 https://github.com/mattkrins/surfaceGetURL/issues
