@@ -4,7 +4,7 @@
 This is a simple Garry's Mod helper function to hot-load images from a web URL for use in your rendering operations.
 
 #### Installation:
-Simple place the file cl_surfaceGetURL.lua into your *garrysmod/lua/autorun/client/* folder.
+Place the file cl_surfaceGetURL.lua into your *garrysmod/lua/autorun/client/* folder.
 
 You could also put it into a gamemode module if the code supports it. For example: *gamemodes/DarkRP/gamemode/modules/cl_surfaceGetURL/cl_surfaceGetURL.lua*
 
@@ -15,7 +15,7 @@ You could also put it into a gamemode module if the code supports it. For exampl
 - **number** The number of seconds of downloading before timing out (Default: 1).
 
 #### Returns:
-- **IMaterial** The material after downloading **or** Material("error")
+- **IMaterial** The material after downloading **or** *Material("error")*
 
 #### Example:
 ```lua
@@ -30,6 +30,7 @@ DPanel.Paint = function()
 end
 ```
 **Result:**
+
 ![Result](https://cloud.githubusercontent.com/assets/2367602/17459932/b99e6e76-5c92-11e6-8196-23d8ae567b1f.png)
 
 #### Usage:
@@ -65,8 +66,8 @@ YourPanel.Paint = function()
 end
 ```
 
-*For more information on how to use downloaded materials, please read [this article](http://wiki.garrysmod.com/page/Category:IMaterial).*
+*For more information on how to use downloaded materials, please read ![gmod](http://wiki.garrysmod.com/favicon.ico) [this article](http://wiki.garrysmod.com/page/Category:IMaterial).*
 
 #### Support:
-**Please direct all your questions to the GitHub issue tracker:** 
+Please direct all your questions to the GitHub issue tracker:
 https://github.com/mattkrins/surfaceGetURL/issues
